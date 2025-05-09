@@ -65,6 +65,8 @@ public class Main {
         list.printList();
         list.reverse();
         list.printList();
+        list.delete(30);
+        list.printList();
 
 
 

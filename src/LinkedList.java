@@ -1,9 +1,8 @@
 public class LinkedList {
-    Node head;
+    Node head ;
     static class Node {
         int data;
         Node next;
-
         Node(int data){
             this.data = data;
             this.next = null;
@@ -22,13 +21,14 @@ public class LinkedList {
             last = last.next;
         }
         last.next = newNode;
+
     }
 
     // Method to add a node at the first
     public void prepend(int newData){
         Node newNode = new Node(newData);
-        newNode.next = this.head;
-        this.head = newNode;
+        newNode.next = head;
+        head = newNode;
     }
 
     public void reverse(){
@@ -57,6 +57,25 @@ public class LinkedList {
             current = current.next;
         }
         System.out.println("Target value " + target + " not found in the list");
+    }
+
+    public void delete(int value){
+        if (head == null){
+            return;
+        }
+        if (head.data == value){
+            head = head.next;
+            return;
+        }
+        Node current = head;
+        while (current.next != null){
+            if(current.next.data == value){
+                current.next = current.next.next;
+                return;
+            }
+            current = current.next;
+        }
+
     }
 
     // Method to print the list
