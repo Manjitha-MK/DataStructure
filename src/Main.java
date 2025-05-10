@@ -65,9 +65,10 @@ public class Main {
         list.printList();
         list.findMiddle();
         list.reverse();
+        list.findValue(20);
         list.printList();
         list.findMiddle();
-        list.delete(30);
+        list.delete(5);
         list.printList();
         list.findMiddle();
 

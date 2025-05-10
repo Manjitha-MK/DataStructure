@@ -68,7 +68,7 @@ public class LinkedList {
             return;
         }
         Node current = head;
-        while (current.next != null){
+        while ( current.next != null){
             if(current.next.data == value){
                 current.next = current.next.next;
                 return;
@@ -94,6 +94,18 @@ public class LinkedList {
 
         System.out.println("Middle Element: " +slow.data);
 
+    }
+
+    public void findValue(int val){
+        Node current = head;
+        while (current != null){
+            if (current.data == val){
+                System.out.println("Node founded: " +val);
+                return;
+            }
+            current = current.next;
+        }
+        System.out.println("Node not founded");
     }
 
     // Method to print the list
