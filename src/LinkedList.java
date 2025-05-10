@@ -45,7 +45,7 @@ public class LinkedList {
     }
 
     public void insertAfter(int target, int value){
-        Node current = this.head;
+        Node current = head;
 
         while(current != null){
             if(current.data == target){
@@ -75,6 +75,24 @@ public class LinkedList {
             }
             current = current.next;
         }
+        System.out.println("Node not found");
+
+    }
+
+    public void findMiddle(){
+        if(head == null){
+            System.out.println("The lis is empty");
+            return;
+        }
+        Node fast = head;
+        Node slow = head;
+
+        while (fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        System.out.println("Middle Element: " +slow.data);
 
     }
 

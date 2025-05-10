@@ -63,10 +63,13 @@ public class Main {
         list.prepend(5);
         list.insertAfter(10,15);
         list.printList();
+        list.findMiddle();
         list.reverse();
         list.printList();
+        list.findMiddle();
         list.delete(30);
         list.printList();
+        list.findMiddle();
 
 
 
