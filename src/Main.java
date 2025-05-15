@@ -73,9 +73,11 @@ public class Main {
         list.findMiddle();
 */
 
+    //.............. Doubly Linked list............ //
     DoublyLinkedList dlist = new DoublyLinkedList();
     dlist.insertAtEnd(10);
     dlist.insertAtEnd(20);
+    dlist.insertAtBeginning(5);
     dlist.displayForward();
 
     }

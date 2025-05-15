@@ -27,6 +27,17 @@ public class DoublyLinkedList {
 
     }
 
+    public void insertAtBeginning(int newData){
+        Node newNode = new Node(newData);
+        newNode.next = head;
+
+        if(head != null){
+            head.prev = newNode;
+        }
+
+        head = newNode;
+    }
+
 
     public void displayForward() {
         Node curr = head;
