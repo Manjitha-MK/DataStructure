@@ -38,6 +38,32 @@ public class DoublyLinkedList {
         head = newNode;
     }
 
+    public void delete(int val){
+        if(head == null){
+            return;
+        }
+        if(head.data == val){
+            head = head.next;
+            if(head != null){
+                head.prev = null;
+            }
+            return;
+        }
+        Node curr = head;
+        while(curr!= null){
+            if(curr.data == val){
+                if (curr.prev != null){
+                    curr.prev.next = curr.next;
+                }
+                if (curr.next != null){
+                    curr.next.prev = curr.prev;
+                }
+                return;
+            }
+            curr = curr.next;
+        }
+    }
+
 
     public void displayForward() {
         Node curr = head;

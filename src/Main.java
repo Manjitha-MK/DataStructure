@@ -79,6 +79,8 @@ public class Main {
     dlist.insertAtEnd(20);
     dlist.insertAtBeginning(5);
     dlist.displayForward();
+    dlist.delete(10);
+    dlist.displayForward();
 
     }
 }
