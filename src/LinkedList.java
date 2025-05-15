@@ -81,7 +81,7 @@ public class LinkedList {
 
     public void findMiddle(){
         if(head == null){
-            System.out.println("The lis is empty");
+            System.out.println("The list is empty");
             return;
         }
         Node fast = head;

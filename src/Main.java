@@ -53,7 +53,7 @@ public class Main {
         manager.display();
          */
 
-
+/*
         //........LinkedList........//
         LinkedList list = new LinkedList();
         list.append(10);
@@ -71,9 +71,12 @@ public class Main {
         list.delete(5);
         list.printList();
         list.findMiddle();
+*/
 
-
-
+    DoublyLinkedList dlist = new DoublyLinkedList();
+    dlist.insertAtEnd(10);
+    dlist.insertAtEnd(20);
+    dlist.displayForward();
 
     }
 }
