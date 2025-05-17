@@ -75,12 +75,14 @@ public class Main {
 
     //.............. Doubly Linked list............ //
     DoublyLinkedList dlist = new DoublyLinkedList();
+    dlist.insertAtBeginning(1);
     dlist.insertAtEnd(10);
     dlist.insertAtEnd(20);
     dlist.insertAtBeginning(5);
     dlist.displayForward();
     dlist.delete(10);
     dlist.displayForward();
+    dlist.displayBackword();
 
     }
 }

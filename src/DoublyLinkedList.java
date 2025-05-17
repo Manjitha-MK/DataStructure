@@ -64,12 +64,27 @@ public class DoublyLinkedList {
         }
     }
 
-
     public void displayForward() {
         Node curr = head;
         while (curr != null) {
             System.out.print(curr.data + " ");
             curr = curr.next;
+        }
+        System.out.println();
+    }
+
+    public void displayBackword(){
+        Node curr = head;
+
+        if (curr == null) return;
+
+        while (curr.next != null){
+            curr = curr.next;
+        }
+
+        while(curr!= null){
+            System.out.print(curr.data + " ");
+            curr = curr.prev;
         }
         System.out.println();
     }
