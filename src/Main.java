@@ -82,7 +82,7 @@ public class Main {
     dlist.displayForward();
     dlist.delete(10);
     dlist.displayForward();
-    dlist.displayBackword();
-
+//    dlist.displayBackword();
+//    System.out.println(dlist.get(0));
     }
 }

@@ -12,6 +12,25 @@ public class DoublyLinkedList {
         }
     }
 
+    public Integer get(int index) {
+        if (index < 0 ) {
+            return null; // Invalid index
+        }
+
+        Node curr = head;
+        int count = 0;
+
+        while (curr != null) {
+            if (count == index) {
+                return curr.data;
+            }
+            count++;
+            curr = curr.next;
+        }
+
+        return null; // Index out of bounds
+    }
+
     public void insertAtEnd(int newData){
         Node newNode = new Node(newData);
         if(head == null){
@@ -62,6 +81,7 @@ public class DoublyLinkedList {
             }
             curr = curr.next;
         }
+        System.out.println("Invalid value");
     }
 
     public void displayForward() {
