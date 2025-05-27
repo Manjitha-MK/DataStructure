@@ -39,6 +39,10 @@ public class MyStack {
         return (top == -1);
     }
 
+    public int size(){
+        return top + 1;
+    }
+
     public void display(){
         System.out.println("Stack: ");
         for (int i = 0; i<= top; i++){
