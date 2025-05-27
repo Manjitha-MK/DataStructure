@@ -13,7 +13,20 @@ public class MyStack {
         if(top < maxSize -1){
             stackArray[++top] = value;
         }else {
-            System.out.println("Stack overflow!");
+            System.out.println("Stack Overflow!");
         }
+    }
+
+    public int pop(){
+        if (!isEmpty()){
+            return stackArray[top--];
+        }else {
+            System.out.println("Stack Underflow!");
+            return -1;
+        }
+    }
+
+    public boolean isEmpty(){
+        return (top == -1);
     }
 }
