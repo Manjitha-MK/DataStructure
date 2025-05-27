@@ -26,6 +26,15 @@ public class MyStack {
         }
     }
 
+    public int peek(){
+        if (!isEmpty()){
+            return stackArray[top];
+        }else {
+            System.out.println("Stack is empty!");
+            return -1;
+        }
+    }
+
     public boolean isEmpty(){
         return (top == -1);
     }
