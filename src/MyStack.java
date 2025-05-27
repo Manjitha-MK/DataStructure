@@ -29,4 +29,12 @@ public class MyStack {
     public boolean isEmpty(){
         return (top == -1);
     }
+
+    public void display(){
+        System.out.println("Stack: ");
+        for (int i = 0; i<= top; i++){
+            System.out.println(stackArray[i]+ " ");
+        }
+        System.out.println();
+    }
 }
